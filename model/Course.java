@@ -14,7 +14,7 @@ public class Course {
     private int sks; 
     private int semester; 
 
-    // Constructor Utama 4 Parameter
+   
     public Course(String code, String courseName, int sks, int semester) { 
         this.code = code; 
         this.courseName = courseName; 
