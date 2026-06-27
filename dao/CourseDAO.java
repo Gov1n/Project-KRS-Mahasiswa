@@ -53,7 +53,7 @@ public class CourseDAO {
                 int sks = rs.getInt("sks");
                 int semester = rs.getInt("semester");
                 
-                // 🟢 Membungkus aman dengan 4 data sesuai model Course milikmu
+                
                 courses.add(new Course(code, name, sks, semester));
             }
         } catch (SQLException e) {
