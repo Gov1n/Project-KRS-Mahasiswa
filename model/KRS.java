@@ -40,7 +40,7 @@ public class KRS {
         return "E";
     }
 
-    // Getter-Getter Standar
+    
     public String getCode() { 
         return (course != null) ? course.getCode() : code; 
     }
