@@ -49,7 +49,7 @@ public class CourseForm extends javax.swing.JFrame {
         List<Course> filteredCourses = new ArrayList<>();
 
         for (Course c : allCourses) {
-            // TAMENG: Jika data dari MySQL bernilai null, ubah otomatis menjadi teks kosong ""
+            
             String code = (c.getCode() != null) ? c.getCode().trim() : "";
             String name = (c.getCourseName() != null) ? c.getCourseName().trim() : "";
 
@@ -65,7 +65,7 @@ public class CourseForm extends javax.swing.JFrame {
 
         for (int i = 0; i < filteredCourses.size(); i++) {
             Course c = filteredCourses.get(i);
-            // TAMENG: Amankan pengisian data ke baris tabel JTable NetBeans
+            
             data[i][0] = (c.getCode() != null) ? c.getCode() : "";
             data[i][1] = (c.getCourseName() != null) ? c.getCourseName() : ""; 
             data[i][2] = String.valueOf(c.getSKS()); 
@@ -81,7 +81,7 @@ public class CourseForm extends javax.swing.JFrame {
         txtName.setText("");
         txtSks.setText("");
         txtSemester.setText("");
-        selectedCourseCode = null; // SINKRON
+        selectedCourseCode = null; 
         btnDelete.setEnabled(false);
         jTable1.clearSelection();
         aturNavigasiButton();
